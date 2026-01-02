@@ -1,13 +1,43 @@
+'use client'; // ADD THIS AT THE TOP
+
 import Header from '@/components/Header';
 import Prizes from '@/components/Prizes';
 import Form from '@/components/Form';
 import Footer from '@/components/Footer';
-import { Star, Zap, Target, Trophy, Users, Clock } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
+import { useRef } from 'react'; // Import useRef
 
 export default function Home() {
+  // Use useRef to get form element
+  const formRef = useRef<HTMLDivElement>(null);
+
+  const scrollToForm = () => {
+    if (formRef.current) {
+      formRef.current.scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+    }
+  };
+
   return (
     <div className="min-h-screen">
       <Header />
+      
+      {/* Add this button section */}
+      <div className="py-3 px-4 text-center">
+        <div className="max-w-4xl mx-auto">
+          <button
+            onClick={scrollToForm}
+            className="group px-8 py-4 bg-linear-to-r from-primary to-secondary text-white text-xl font-bold rounded-2xl hover:opacity-90 transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-primary/30 flex items-center gap-3 mx-auto"
+          >
+            <span>এখনই অংশগ্রহণ করুন</span>
+            <ArrowDown className="h-6 w-6 group-hover:animate-bounce" />
+          </button>
+          <p className="mt-4 text-gray-400 text-sm">
+            মাত্র কয়েক মিনিটে ফর্ম পূরণ করুন এবং পুরস্কার জেতার সুযোগ নিন!
+          </p>
+        </div>
+      </div>
       
       <Prizes />
       
@@ -94,7 +124,11 @@ export default function Home() {
         </div>
       </div>
       
-      <Form />
+      {/* Add ref to your Form */}
+      <div ref={formRef}>
+        <Form />
+      </div>
+      
       <Footer />
     </div>
   );
