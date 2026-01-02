@@ -178,18 +178,6 @@ export default function Form() {
               />
             </div>
             
-            {/* Terms and Conditions */}
-            <div className="flex items-start gap-3 p-4 bg-white/5 rounded-xl">
-              <input
-                type="checkbox"
-                id="terms"
-                required
-                className="mt-1 h-4 w-4 text-primary bg-white/10 border-gray-600 rounded focus:ring-primary"
-              />
-              <label htmlFor="terms" className="text-sm text-gray-400">
-                I agree to the terms and conditions. I understand that my data will be used only for the contest and I may be contacted if I win.
-              </label>
-            </div>
             
             {/* Submit Button */}
             <button
