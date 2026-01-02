@@ -13,7 +13,7 @@ export interface Prize {
 const prizes: Prize[] = [
   {
     id: 1,
-    name: 'iPhone 15 Pro',
+    name: 'iPhone 17 Pro max',
     image: '/prizes/iphone.jpg',
     description: 'Latest Apple smartphone with advanced camera',
     icon: <Smartphone className="h-10 w-10" />,
