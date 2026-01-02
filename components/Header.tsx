@@ -11,18 +11,18 @@ export default function Header() {
         </div>
         <Sparkles className="h-6 w-6 text-yellow-400 animate-pulse" />
         <h1 className="text-4xl md:text-5xl font-bold gradient-text">
-          Lucky Winner
+          লাকি উইনার
         </h1>
         <Sparkles className="h-6 w-6 text-yellow-400 animate-pulse" />
       </div>
       
       <p className="relative z-10 text-xl text-gray-300 max-w-2xl mx-auto mb-6">
-        Enter for a chance to win <span className="font-bold text-primary">amazing prizes</span>! One lucky winner will be chosen every week.
+        <span className="font-bold text-primary">অসাধারণ পুরস্কার</span> জেতার সুযোগ নিন! প্রতি সপ্তাহে একজন ভাগ্যবান বিজয়ী নির্বাচিত হবে।
       </p>
       
       <div className="relative z-10 inline-flex items-center gap-2 glass-morphism px-4 py-2 rounded-full">
         <Clock className="h-4 w-4 text-primary" />
-        <span className="text-sm font-medium">Next draw: <span className="text-primary">7 days</span></span>
+        <span className="text-sm font-medium">পরবর্তী ড্র: <span className="text-primary">৭ দিন</span></span>
       </div>
       
       {/* Floating elements */}

@@ -61,12 +61,12 @@ export default function Prizes() {
           <div className="inline-flex items-center justify-center gap-2 mb-4">
             <div className="h-2 w-8 bg-linear-to-r from-primary to-secondary rounded-full"></div>
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Win <span className="gradient-text">Amazing Prizes</span>
+              <span className="gradient-text">অসাধারণ পুরস্কার</span> জিতুন
             </h2>
             <div className="h-2 w-8 bg-linear-to-r from-secondary to-primary rounded-full"></div>
           </div>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            One lucky participant will win one of these incredible prizes. Enter now for your chance to win!
+            এই অসাধারণ পুরস্কারগুলির যেকোনো একটি জেতার সুযোগ পেতে এখনই আবেদন করুন!
           </p>
         </div>
         
@@ -135,8 +135,7 @@ export default function Prizes() {
           
           {/* Note about delivery */}
           <p className="mt-6 text-gray-400 text-sm max-w-2xl mx-auto">
-            All prizes will be delivered to winners anywhere in the UAE within 7 business days. 
-            Winners are responsible for any applicable customs duties or taxes.
+            পুরস্কার বিজয়ীর কাছে UAE-র যেকোনো স্থানে বিনামূল্যে পৌঁছে দেওয়া হবে (৭ কার্যদিবসের মধ্যে)।
           </p>
         </div>
       </div>
